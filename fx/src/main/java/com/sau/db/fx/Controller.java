@@ -16,7 +16,6 @@ public class Controller {
 
         AppDb adb = new AppDb();
         Ogrenciler st = adb.getir(1);
-        //System.out.println("Adı:" + st.getOgrenciAd() + " Soyadı: " + st.getOgrenciSoyad());
         l1.setText(st.getOgrenciAd());
     }
 }

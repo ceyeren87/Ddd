@@ -15,6 +15,14 @@ public class AppDb {
         Ogrenciler s = getir(1);
         System.out.println("Gelen kayıt:"+s.getOgrenciAd());
 
+        //İnsert için
+        //Ogrenciler st = new Ogrenciler();
+        //st.setOgrenciNo(3);
+        //st.setOgrenciAd("Ahmet");
+        //st.setOgrenciSoyad("Özmen");
+
+        //insert(st);
+
     }
 
     public static Ogrenciler getir(int id){
