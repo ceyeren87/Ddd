@@ -1,4 +1,4 @@
-package com.sau.fx;
+package com.sau.db.fx;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

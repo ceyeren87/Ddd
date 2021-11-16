@@ -5,5 +5,13 @@
              version="3.0">
     <persistence-unit name="default">
 
+        <class>com.sau.db.Ogrenciler</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ogrenci?serverTimezone=UTC"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="1234"/>
+        </properties>
     </persistence-unit>
 </persistence>
+
