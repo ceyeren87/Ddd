@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.sau.fx/com.sau.fx.HelloApplication</mainClass>
+                            <mainClass>com.sau.fx/com.sau.fx.AppFx</mainClass>
                         </configuration>
                     </execution>
                 </executions>
