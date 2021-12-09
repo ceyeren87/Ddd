@@ -11,33 +11,20 @@ public class AppDb {
 
     public static void main(String[] args) {
 
-        //Select
-        Ogrenciler s = getir(1);
-        System.out.println("Gelen kayıt:"+s.getOgrenciAd());
-
-        //İnsert için
-        //Ogrenciler st = new Ogrenciler();
-        //st.setOgrenciNo(3);
-        //st.setOgrenciAd("Ahmet");
-        //st.setOgrenciSoyad("Özmen");
-
-        //insert(st);
-
     }
 
-    public static Ogrenciler getir(int id){
+    public static Kitap getir(int id){
         EntityManager em = emf.createEntityManager();
         // Getir
         em.getTransaction().begin();
-        Ogrenciler st = em.find(Ogrenciler.class, id);
+        Kitap st = em.find(Kitap.class, id);
         em.getTransaction().commit();
         return st;
     }
 
-    public static void insert(Ogrenciler s){
+    public static void  insert(Kitap s){
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
-        System.out.println("INSERT -> [" +s.getOgrenciNo()+ " : " + s.getOgrenciAd()+ " : " + s.getOgrenciSoyad()+"]");
         em.persist(s);
         em.getTransaction().commit();
     }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ogrenci@localhost" uuid="eb9587a4-3d51-4d7f-bd70-15a2103f60c0">
+    <data-source source="LOCAL" name="kutup" uuid="d5ce6083-1637-48b2-9a7a-f368a18238e0">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/ogrenci</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/kutup</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sau.db.fx.Controller">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-
-    <Label fx:id="l1" />
-    <Button fx:id="Getir" onAction="#Getir" text="Getir" />
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sau.db.fx.Controller">
+   <children>
+      <SplitPane layoutX="8.0" layoutY="56.0" orientation="VERTICAL" prefHeight="346.0" prefWidth="760.0">
+         <items>
+            <AnchorPane prefWidth="758.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="15.0" prefWidth="85.0" text="Başlık :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="41.0" prefHeight="15.0" prefWidth="85.0" text="1.Yazar :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="68.0" text="2.Yazar :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="95.0" text="3.Yazar :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="122.0" prefHeight="15.0" prefWidth="85.0" text="Yayınevi :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="3.0" layoutY="149.0" prefHeight="15.0" prefWidth="96.0" text="Anahtar Kelime :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="176.0" prefHeight="15.0" prefWidth="85.0" text="ISBN/ISSN :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="203.0" prefHeight="14.0" prefWidth="85.0" text="Baskı Sayısı :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="230.0" prefHeight="14.0" prefWidth="85.0" text="Basım Yılı :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="257.0" prefHeight="14.0" prefWidth="85.0" text="Durum :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="284.0" prefHeight="14.0" prefWidth="85.0" text="Kitaplık :">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="311.0" prefHeight="14.0" prefWidth="85.0" text="Raf :" />
+                  <TextField fx:id="txtBaslik" layoutX="101.0" layoutY="9.0" prefHeight="25.0" prefWidth="656.0" />
+                  <TextField fx:id="txtYazar1" layoutX="101.0" layoutY="36.0" />
+                  <TextField fx:id="txtYazar2" layoutX="101.0" layoutY="63.0" />
+                  <TextField fx:id="txtYazar3" layoutX="101.0" layoutY="90.0" />
+                  <TextField fx:id="txtYayinEvi" layoutX="101.0" layoutY="117.0" />
+                  <TextField fx:id="txtAnahtarKelime" layoutX="101.0" layoutY="144.0" prefHeight="25.0" prefWidth="296.0" />
+                  <TextField fx:id="txtIsbnIssn" layoutX="101.0" layoutY="171.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField fx:id="txtBaskiSayisi" layoutX="101.0" layoutY="198.0" prefHeight="25.0" prefWidth="51.0" />
+                  <TextField fx:id="txtBasimYili" layoutX="101.0" layoutY="225.0" prefHeight="25.0" prefWidth="51.0" />
+                  <TextField fx:id="txtDurum" layoutX="101.0" layoutY="252.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField fx:id="txtKitaplik" layoutX="101.0" layoutY="279.0" prefHeight="25.0" prefWidth="51.0" />
+                  <TextField fx:id="txtRaf" layoutX="101.0" layoutY="307.0" prefHeight="25.0" prefWidth="51.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="8.0" layoutY="3.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="758.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="756.0">
+               <children>
+                  <Label fx:id="lblKitap" alignment="CENTER_RIGHT" layoutY="10.0" prefHeight="25.0" prefWidth="63.0" text="Kitap No :">
+                     <font>
+                        <Font name="Tahoma Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtKitapNo" alignment="CENTER_RIGHT" layoutX="75.0" layoutY="9.0" prefHeight="19.0" prefWidth="103.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <Button fx:id="btnKayit" layoutX="178.0" layoutY="9.0" mnemonicParsing="false" onAction="#Kayit" text="Kayıt" />
+                  <Button fx:id="btnSol" alignment="CENTER_RIGHT" layoutX="220.0" layoutY="9.0" mnemonicParsing="false" onAction="#Sol" prefHeight="25.0" prefWidth="33.0" text="&lt;&lt;" />
+                  <Button fx:id="btnArama" layoutX="253.0" layoutY="9.0" mnemonicParsing="false" onAction="#Arama" text="Arama" />
+                  <Button fx:id="btnSag" layoutX="304.0" layoutY="9.0" mnemonicParsing="false" onAction="#Sag" prefHeight="25.0" prefWidth="33.0" text="&gt;&gt;" />
+                  <Button fx:id="btnKapat" layoutX="702.0" layoutY="9.0" mnemonicParsing="false" onAction="#Kapat" style="-fx-background-color: red;" text="Kapat" textFill="#171717" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
